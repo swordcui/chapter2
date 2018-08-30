@@ -70,18 +70,20 @@ public class CustomerService {
 //        }catch (SQLException e) {
 //            LOGGER.error("execute sql failure" ,e );
 
-        }finally {
+        }
+
+
+        finally {
 //            if(conn != null);
 //            try {
 //                conn.close();
 //            }catch (SQLException e) {
 //                LOGGER.error("close connection failure" ,e);
 //            }
-            DatabaseHelper.closeConnection();
-        }
-
+//            DatabaseHelper.closeConnection();
+          }
 //        return null;
-    }
+       }
     /**
      * 获取客户
      */
