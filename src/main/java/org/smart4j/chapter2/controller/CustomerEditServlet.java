@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 
 
 /**
- * 删除客户
+ * 编辑客户
  */
-@WebServlet("/customer_delete")
+@WebServlet("/customer_edit")
 
 public class CustomerEditServlet extends HttpServlet{
 
