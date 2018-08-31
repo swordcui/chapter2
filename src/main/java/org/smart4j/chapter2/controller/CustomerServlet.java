@@ -29,9 +29,10 @@ public class CustomerServlet  extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+//        super.doGet(req, resp);
+        //把父类继承下来会报错
         List<Customer> customerList = customerService.getCustomerList();
         req.setAttribute("customerList",customerList);
-        req.getRequestDispatcher("/WEB-INF/view/customer.jsp").forward(req,resp);
+        req.getRequestDispatcher("WEB-INF/view/customer.jsp").forward(req,resp);
     }
 }
